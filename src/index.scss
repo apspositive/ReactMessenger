@@ -14,11 +14,6 @@ body {
   transition-duration: .5s;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
 main {
   margin: auto;
   max-width: 1420px;
@@ -31,8 +26,7 @@ main {
 
 .col1{
   min-height:10px;
-  display: inline-block;
-  float : left; 
+  float: left; 
   width: 100px;
   padding: 0;
   text-align: right;
@@ -42,8 +36,7 @@ main {
 
 .col2{
   min-height:10px;
-  display: inline-block;
-  float : left; 
+  float: left; 
   width: 100px;
   text-align: center;
   padding-top:36px;
@@ -51,7 +44,6 @@ main {
   background-position: center;
   background-repeat: repeat-y;
 }
-
 
 .col3{
   margin: 20px;

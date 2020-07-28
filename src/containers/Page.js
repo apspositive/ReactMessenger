@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import Form from '../components/form/form';
 import Activity from '../components/activities/activity';
-import adapter from '../database/adapter';
+import adapter from '../dataSources/database/adapter';
 
 
 import classes from './page.module.scss';
@@ -64,7 +64,7 @@ class Page extends Component {
   }
 
   submitButtonClickHandler(event) {
-    if (!this.state.saving) {
+    if (!this.state.saving && !this.state.loading) {// adding when updating is not a good idea
       let list = [...this.state.activities];
       const newID = list.length;
       const comment = document.getElementById('inputText').value;
@@ -92,7 +92,7 @@ class Page extends Component {
     return (
       <div className={classes.main}>
         <Form
-          blocked={this.state.loading||this.state.saving}
+          blocked={this.state.loading || this.state.saving}
           whoom={this.state.whoom}
           submitButtonClickHandler={this.submitButtonClickHandler.bind(this)}
           typeSelectHandler={this.typeSelectHandler.bind(this)}
