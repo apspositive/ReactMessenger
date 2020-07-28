@@ -8,6 +8,15 @@
   font-size: $paragraph-font-size;
 }
 
+.activity_saving {
+  clear: both;
+  display: flex;
+  padding : 0;
+  text-align: center;
+  font-size: $paragraph-font-size;
+  opacity: 0.5;
+}
+
 .age{
  font-size: $paragraph-font-size;
 }

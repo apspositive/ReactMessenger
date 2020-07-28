@@ -8,12 +8,15 @@ import Activity from './activity';
 configure({ adapter: new Adapter() });
 
 describe('<Post />', () => {
-  const testData = { age: 0, eventType: 1, who: 'Test_who',  whoom: 'Test_whoom', children: 'Test_paragraph' };
+
+  const timestamp = Date.now();
+
+  const testData = { age: timestamp, eventType: 1, who: 'Test_who',  whoom: 'Test_whoom', children: 'Test_paragraph' };
 
   const wrapper = shallow(<Activity />).setProps(testData);
   
   it('Should display age and icon', () => {  // check the formatting
-    expect(wrapper.children().find('div').first().text()).toEqual(testData.age.toString());
+    expect(wrapper.children().find('div').first().text()).toEqual('now');
     expect(wrapper.children().find('div').at(1).find('icon')).toHaveLength(1);
   })
 
