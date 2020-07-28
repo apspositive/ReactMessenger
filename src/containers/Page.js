@@ -92,6 +92,7 @@ class Page extends Component {
     return (
       <div className={classes.main}>
         <Form
+          blocked={this.state.loading||this.state.saving}
           whoom={this.state.whoom}
           submitButtonClickHandler={this.submitButtonClickHandler.bind(this)}
           typeSelectHandler={this.typeSelectHandler.bind(this)}

@@ -11,6 +11,12 @@ textarea
   font-size: $text-font-size;
 }
 
+.blocked
+{
+  background-color: $gray-icon-color; 
+  color: $gray-border-color;
+}
+
 button
 {
   float:right;
@@ -22,3 +28,4 @@ button
   height: 48px;
   font-size: $button-font-size;
 }
+
