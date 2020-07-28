@@ -1,0 +1,27 @@
+$font-stack:   Helvetica, Arial;
+$gray-border-color: #ececec;
+$gray-icon-color: #999;
+$accent-color: #2ec3e9;
+$selected-icon-color: $accent-color;
+$button-color: #73c5b4;
+$gray-fill-color: #f6f6f6;
+
+$header-font-size: 23px;
+$text-font-size: 19px;
+$button-font-size: 19px;
+$paragraph-font-size: 21px;
+
+$paddings-size: 10px;
+$border-radius: 10px;
+
+@font-face {
+  font-family: 'icons';
+  src: url('./assets/icon-font/fontello.eot?591515');
+  src: url('./assets/icon-font/fontello.eot?591515#iefix') format('embedded-opentype'),
+       url('./assets/icon-font/fontello.woff?591515') format('woff'),
+       url('./assets/icon-font/fontello.ttf?591515') format('truetype'),
+       url('./assets/icon-font/fontello.svg?591515#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+ 

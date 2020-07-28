@@ -1,0 +1,23 @@
+@import "../../variables.scss";
+
+.activity {
+  clear: both;
+  display: flex;
+  padding : 0;
+  text-align: center;
+  font-size: $paragraph-font-size;
+}
+
+.age{
+ font-size: $paragraph-font-size;
+}
+
+.who{
+ font-weight: bold;
+ color: $accent-color;
+}
+
+.whoom{
+ font-weight: bold;
+ color: $accent-color;
+}

@@ -1,0 +1,21 @@
+@import "../../../variables.scss";
+
+.radio{
+  float:left;
+}
+
+input{
+  height:0px;
+  width:0px;
+}
+
+
+input:checked + i{
+  color: white;
+  background-color: $selected-icon-color;
+  border: 2px solid $selected-icon-color;
+}
+
+input + i{
+  border:2px solid $gray-border-color;
+}
